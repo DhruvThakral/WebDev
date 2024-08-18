@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholders and Labels</title>
+</head>
+<body>
+    <form>
+        <!-- Normal Approach -->
+        <!-- <label>
+        Username:
+            <input type="text" placeholder="Enter your username">
+            <br>
+        </label>
+
+        <label>
+        Password:
+            <input type="password" placeholder="Enter your password">
+        </label> -->
+
+        <!-- Classical Approach -->
+        <div>
+            <label for="username" >Username: </label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+
+        <div>
+            <label for="pswrd">Password: </label>
+            <input type="password" id="pswrd" placeholder="Enter your password">
+        </div>
+
+        <div>
+            <label for="age">Age: </label>
+            <input type="number" id="age" placeholder="Enter your age">
+        </div>
+
+    </form>
+</body>
+</html>
