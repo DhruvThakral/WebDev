@@ -39,3 +39,95 @@ h1, h3{
 nav ul li a{        
     color:hotpink;
 }
+
+/* Adjacent Sibling Combinator */
+
+p + h3{
+    text-decoration:underline;
+}
+
+.upvote + button {
+    background-color: cornflowerblue;
+    color:blue;
+}
+
+
+/* Child Combinator */
+
+div > input {
+    background-color: darksalmon;
+}
+
+
+/* Attribute Selector */
+
+input[type="text"]{
+    color:green;
+}
+
+input[type="password"]{
+    color:red;
+}
+
+input[type]{
+    background-color: ghostwhite;
+}
+
+/* Pseudo Class */
+
+button:hover{
+    background-color: black;
+    color:white;
+}
+
+button:active{
+    background-color:hotpink;
+    color:black;
+}
+
+p:active{
+    font-weight: bold;
+    color:green;
+}
+
+input[type="radio"]:checked + label{
+    font-weight:bold;
+    color:red;
+} 
+
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+
+/* pseudo element */
+
+h1::first-letter{
+    color:pink;
+}
+
+p::first-line{
+    color:red;
+}
+
+p::selection{
+    background-color:aqua;
+}
+
+
+/* Cascading */
+
+h3{
+    background-color: coral;
+}
+
+h3{
+    background-color: lightblue;
+}
+
+
+/* !important */
+
+h3{
+    background-color: antiquewhite !important;
+}
