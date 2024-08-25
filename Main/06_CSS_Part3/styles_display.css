@@ -1,0 +1,42 @@
+/* h2{
+    display: inline;
+    background-color: pink;
+}
+
+span{
+    display:block;
+    background-color: greenyellow;
+} */
+
+/* span{
+    background-color:pink;
+    border:2px solid black;
+    height:200px;
+    width:200px;
+    /* height and width are not working here */
+    /* padding:20px;
+    margin:20px;
+}
+
+div{
+    border:2px solid black;
+    height:200px;
+    width:200px; */
+        /* height and width are  working here */
+    /* padding:20px;
+    margin:20px;
+} */ 
+
+div{
+    height:200px;
+    width:200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin:5px;
+    display:inline-block;
+}
+
+#third{
+    /* To hide third div  */
+    display:none;
+}
