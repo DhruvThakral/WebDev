@@ -1,0 +1,41 @@
+#container{
+    height:400px;
+    width:400px;
+    border:2px solid rgb(124, 124, 196);
+    border-radius: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.child{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    border-radius:10px;
+    font-size:50px;
+    background-color: grey;
+    text-align: center;
+}
+
+
+
+#container1{
+    height:50px;
+    width:900px;
+    background-color: pink;
+    border: 2px solid rgb(145, 145, 196);
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: flex-start;
+    align-content: center; */
+}
+
+.option{
+    height:50px;
+    width:80px;
+    font-size: 24px;
+    margin-left: 5px;
+    line-height: 50px;
+}
