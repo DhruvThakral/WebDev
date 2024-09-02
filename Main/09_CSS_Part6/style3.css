@@ -16,11 +16,11 @@ h1{
 }
 
 
-@media(min-width:500px){
+/* @media(min-width:500px){
     h1{
     background-color: green;
     }
-}
+} */
 
 @media(max-width:100px){
     h1{
@@ -31,5 +31,13 @@ h1{
 @media(min-width:200px) and (max-width:300px){
     h1{
         background-color: pink;
+    }
+}
+
+@media(orientation:landsacpe){
+    h1{
+        background-color: goldenrod;
+        color:red;
+
     }
 }
