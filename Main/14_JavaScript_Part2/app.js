@@ -58,16 +58,92 @@
 
 // Nested if-else
 
-let marks = 88;
+// let marks = 88;
 
-if(marks >= 33){
-    console.log("Pass");
-    if(marks >= 80){
-        console.log("Grade : O");
-    }else{
-        console.log("Grade : A");
-    }
-}
-else{
-    console.log("Better Luck Next Time!");
-}
+// if(marks >= 33){
+//     console.log("Pass");
+//     if(marks >= 80){
+//         console.log("Grade : O");
+//     }else{
+//         console.log("Grade : A");
+//     }
+// }
+// else{
+//     console.log("Better Luck Next Time!");
+// }
+
+
+
+// Practice Ques.
+// let str = "pple";
+
+// if(str[0] == 'a' && str.length > 3){
+//     console.log("Good String");
+// }
+// else{
+//     console.log("Not a Good String");
+// }
+
+
+// let color= "red";
+
+// switch(color){
+//     case "red":
+//         console.log("STOP");
+//         break;
+//     case "yellow":
+//         console.log("Ready");
+//         break;
+//     case "green":
+//         console.log("Go");
+//         break;
+//     default:
+//         console.log("ERROR");
+// }
+
+
+// let day = 14;
+
+// switch(day){
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break;
+//     case 7:
+//         console.log("Sunday");
+//         break;
+//     default:
+//         console.log("INVALID");
+// }
+
+
+
+// Alert and Prompt
+
+// alert("This is a simple alert!");
+
+// console.error("This is an error");
+// console.warn("This is a warning message");
+
+// prompt("Enter your first name:");
+
+
+let firstName = prompt("Enter your first Name: ");
+
+let secondName = prompt("Enter your second Name: ");
+
+console.log(firstName + secondName);
