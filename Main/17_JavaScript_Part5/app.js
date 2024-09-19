@@ -19,3 +19,12 @@ const post = {
     reposts : 5,
     tags : ["@delta","@InGOV"]
 };
+
+
+const obj = {
+    1 : "a",
+    2 : "b",
+    null : "c",
+    undefined : "d",
+    true : "e"
+}
