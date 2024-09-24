@@ -75,4 +75,23 @@
 // ];
 
 
-let 
+// let dice = Math.floor(Math.random()*6)+1;
+
+// const car = {
+//     name : "Mercedes",
+//     model : "Maybach",
+//     color : "Black"
+// };
+
+// console.log(car.name);
+
+
+let person = {
+    name : "John",
+    age:22,
+    city : "Delhi"
+};
+
+person.city = "New York";
+person.country = "USA";
+console.log(person);
