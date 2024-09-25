@@ -115,7 +115,7 @@ function sumAll(num){
     return sum;
 }
 
-console.log(sumAll(100));
+// console.log(sumAll(100));
 
 
 // Ques
@@ -130,4 +130,107 @@ function concat(arr){
     return s;
 }
 
-console.log(concat(arr));
+// console.log(concat(arr));
+
+
+
+// Practie Ques
+
+let greet = "Hello";        // Global Scope
+
+function changeGreet(){
+    let greet = "Namaste";  // Function Scope
+    console.log(greet);     
+
+    function innerGreet(){  // Lexical Scope
+        console.log(greet);
+    }
+
+    innerGreet();
+}
+
+
+// console.log(greet);
+// changeGreet();
+
+
+
+// Function Expression
+
+let hello = function(){
+    console.log("Hello");
+}
+
+// hello();
+
+hello = function(){
+    console.log("Namaste");
+}
+
+// hello();
+
+
+
+// Higher Order function
+
+function multipleGreet(func,count){
+    for(let i=1;i<=count;i++){
+        func();
+    }
+}
+
+let greet2 = function() {
+    console.log("Hello");
+}
+
+// multipleGreet(greet2, 10);
+
+
+function oddOrEvenTest(request){
+    if(request=="odd"){
+        return function(n){
+            console.log(!(n%2==0));
+        }
+    }
+    else if(request == "even"){
+        return function(n){
+            console.log(n%2==0);
+        }
+    }
+    else{
+        console.log("Wrong Request");
+    }
+}
+
+let request = "odd";
+let func = oddOrEvenTest(request);
+// func(3);
+
+
+// Methods
+
+const calculator = {
+    add : function(a,b){
+        return a+b;
+    },
+
+    sub : function(a,b){
+        return a-b;
+    },
+
+    mul : function(a,b){
+        return a*b;
+    }
+};
+
+const calc1 = {
+    add(a,b) {
+        return a+b;
+    },
+
+    sub(a,b) {
+        return a-b;
+    }
+}
+
+console.log(calc1.add(4,6));
