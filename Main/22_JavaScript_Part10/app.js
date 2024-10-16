@@ -1,7 +1,16 @@
-let btn = document.querySelector('button');
+let btns = document.querySelectorAll('button');
 
 function sayHello(){
     alert("Hello");
 }
 
-btn.onclick = sayHello ; 
+function sayName(){
+    alert("Dhruv");
+}
+
+for(btn of btns){
+    btn.addEventListener("click", sayHello);
+        btn.addEventListener("click",sayName);
+
+    btn.addEventListener("dbclick", function() { console.log("You double clicked me !"); });
+}
