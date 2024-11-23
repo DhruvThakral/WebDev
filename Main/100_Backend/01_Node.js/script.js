@@ -17,6 +17,27 @@
 // console.log("Bye!");
 
 
-const someValue = require("./math");
+// const math = require("./math");
 
-console.log(someValue);
+// console.log(math);
+// console.log(math.sum(45,29));
+// console.log(math.mul(34,23));
+// console.log("Value of PI: ",math.PI);
+// console.log("Value of g: ",math.g);
+
+
+
+// const info = require("./Fruits");
+// console.log(info);
+// console.log(info[0].name);
+
+
+
+
+import {sum, PI} from "./math.js";
+
+console.log("Sum: ",sum(1,2));
+
+
+import {generate} from "random-words";
+console.log(generate());
