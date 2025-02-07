@@ -44,11 +44,13 @@ const Book = mongoose.model("Book", bookSchema);
 // })
 
 
+
 let Book2 = new Book({
     title:"Mathematics X",
     author:"RD Sharma",
     price:500
 });
+
 
 Book2.save()
 .then((res)=>{
